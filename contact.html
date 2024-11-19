@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        header {
+            text-align: center;
+            background-color: #fad70c;
+            padding: 20px;
+            color: white;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+        }
+        header h1 {
+            margin-top: 20px; /* Space between the logo and the navigation links */
+        }
+        header a ,#sm {
+            margin: 0 100px; /* Space between each link */
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        header a:hover {
+            text-decoration: underline; /* Optional: Hover effect */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="logoparam.png" alt="Website Logo"><br>
+            <h1>
+                <a href="about.html">About Us</a>
+                <a href="login.html">Sign In</a>
+                <a href="login.html">Sign Up</a>
+                <a href="contact.html">Contact Us</a>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <section>
+            <p>If you have any questions or inquiries, feel free to get in touch with us using the form below:</p>
+        </section>
+        <section>
+            <form action="submit_form.html" method="post">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer style="text-align: center; display: flex; justify-content: space-between; background-color: #fad70c; color: rgb(0, 0, 0); padding: 10px; margin-top: 20px;">
+        <h2>&copy; 2024 Your Project Name. All rights reserved.</h2>
+        <div class="sm">
+            <h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </h2>
+        </div>
+        <h2>Address: 123, Your Street, Your City, Your Country</h2>
+    </footer>
+</body>
+</html>
